@@ -19,12 +19,8 @@ export default class Home extends Component {
         navigator: PropTypes.object,
     };
     click = () => {
-        console.log('dafd' + this.props.passProps);
         this.context.navigator.push({
             location: '/result/result',
-            passProps: {
-                testValue: 55555,
-            },
         });
     };
 
